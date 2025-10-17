@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i love india</title>
+    <!-- Highlight.js CSS theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        /* Custom styling to make the highlighted block look like a prominent title */
+        h1 pre {
+            display: inline-block; /* Make the pre block only as wide as its content */
+            margin: 0 auto; /* Center the pre block */
+            padding: 0; /* Remove default pre padding */
+            background: none; /* Remove default pre background */
+            border: none; /* Remove default pre border */
+            overflow: visible; /* Ensure text isn't cut off */
+            text-align: left; /* Keep text alignment inside pre as default for highlight.js */
+        }
+        h1 code {
+            font-size: 3em; /* Larger font size for title */
+            font-weight: bold;
+            display: block; /* Make code block take full width of its parent pre */
+            padding: 15px 30px; /* Add padding around the text */
+            border-radius: 10px; /* Rounded corners for the highlighted block */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            line-height: 1.2;
+            /* highlight.js theme will handle background and text color */
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px 15px;
+            border-left: 5px solid #007bff;
+            background-color: #e9f7ff;
+            text-align: left;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <!-- The title text inside <pre><code> for highlight.js. -->
+        <!-- 'language-plaintext' ensures it's treated as plain text and styled by highlight.js. -->
+        <pre><code class="language-plaintext">i love india</code></pre>
+    </h1>
+
+    <p>Maharashtra</p>
+    <p>Uttar Pradesh</p>
+    <p>Tamil Nadu</p>
+
+    <!-- Highlight.js JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <!-- Initialize Highlight.js -->
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+</html>
